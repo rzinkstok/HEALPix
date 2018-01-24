@@ -3,7 +3,7 @@ package org.asterope.healpix;
 import junit.framework.TestCase;
 
 import java.util.TreeSet;
-import org.apache.commons.math.geometry.*;
+import org.apache.commons.math3.geometry.euclidean.threed.*;
 
 
 public class QueryDiscTest extends TestCase {

@@ -2,7 +2,7 @@ package org.asterope.healpix;
 
 
 import junit.framework.TestCase;
-import org.apache.commons.math.geometry.Vector3D;
+import org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
 
 
 public class PixToolTest1 extends TestCase {
