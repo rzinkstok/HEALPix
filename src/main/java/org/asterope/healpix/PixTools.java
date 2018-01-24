@@ -911,6 +911,12 @@ public class PixTools {
             if ( BitManipulation.MODULO(ir, 2) == 0)
                 kshift = 1; // 1 if ir even, 0 otherwise
             long ip =  ((jp + jm - nside + kshift + 1) / 2) + 1; // in [1,4n]
+
+            // Fixes problem where half of first pixel in equatorial ring is assigned to first pixel of next ring
+            if(ip>nl4) {
+                ip -= nl4;
+            }
+
             ipix1 = ncap + nl4 * (ir - 1) + ip;
         } else { // North and South polar caps
             double tp = tt - (long) tt;
