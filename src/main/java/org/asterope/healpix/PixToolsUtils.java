@@ -6,7 +6,7 @@
 package org.asterope.healpix;
 
 
-import org.apache.commons.math.geometry.Vector3D;
+import org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
 
 /** various utilities not directly related to Healpix.*/
 public class PixToolsUtils {
